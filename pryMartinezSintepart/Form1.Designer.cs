@@ -1,6 +1,6 @@
 ﻿namespace pryMartinezSintepart
 {
-    partial class Form1
+    partial class FrmBienvenida
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBienvenida));
             lblBienvenida = new Label();
             imagen = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)imagen).BeginInit();
@@ -55,7 +55,7 @@
             imagen.TabIndex = 1;
             imagen.TabStop = false;
             // 
-            // Form1
+            // FrmBienvenida
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -63,7 +63,7 @@
             ClientSize = new Size(800, 450);
             Controls.Add(imagen);
             Controls.Add(lblBienvenida);
-            Name = "Form1";
+            Name = "FrmBienvenida";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)imagen).EndInit();
             ResumeLayout(false);
