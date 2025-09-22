@@ -11,5 +11,10 @@ namespace pryMartinezSintepart
         {
 
         }
+
+        private void FrmBienvenida_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

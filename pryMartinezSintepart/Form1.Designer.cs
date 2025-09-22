@@ -65,6 +65,7 @@
             Controls.Add(lblBienvenida);
             Name = "FrmBienvenida";
             Text = "Form1";
+            Load += FrmBienvenida_Load;
             ((System.ComponentModel.ISupportInitialize)imagen).EndInit();
             ResumeLayout(false);
             PerformLayout();

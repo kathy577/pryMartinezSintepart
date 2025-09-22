@@ -134,6 +134,7 @@
             Controls.Add(lblUsuario);
             Name = "frmLogin";
             Text = "Login";
+            Load += frmLogin_Load;
             ResumeLayout(false);
             PerformLayout();
         }

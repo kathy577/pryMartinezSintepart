@@ -52,10 +52,35 @@ namespace pryMartinezSintepart
 
         private void txtUsuario_TextChanged(object sender, EventArgs e)
         {
-            if(txtUsuario.Text == "")
-                txtContraseña.Enabled = false;  
+            if (txtUsuario.Text == "")
+                txtContraseña.Enabled = false;
             else
-                txtContraseña.Enabled=true;
+                txtContraseña.Enabled = true;
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+            cmdAceptar.Enabled = false;
+            txtUsuario.TextChanged += ValidarCampos;
+            txtContraseña.TextChanged += ValidarCampos;
+            lstModulo.TextChanged += ValidarCampos;
+
+
+
+        }
+
+        private void ValidarCampos(object? sender, EventArgs e)
+        {
+           if(!string.IsNullOrWhiteSpace(txtUsuario.Text)&&
+                ! string.IsNullOrWhiteSpace(txtContraseña.Text)&&
+                ! string.IsNullOrWhiteSpace(lstModulo.Text))
+            {
+                cmdAceptar.Enabled = true;
+            }
+            else
+            {
+                cmdAceptar.Enabled= false;  
+            }
         }
     }
 }
