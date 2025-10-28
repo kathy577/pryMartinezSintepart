@@ -37,21 +37,21 @@
             // lblBienvenida
             // 
             lblBienvenida.AutoSize = true;
-            lblBienvenida.Font = new Font("Bernard MT Condensed", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblBienvenida.Font = new Font("Bernard MT Condensed", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblBienvenida.ForeColor = Color.DarkRed;
-            lblBienvenida.Location = new Point(206, 82);
+            lblBienvenida.Location = new Point(49, 44);
             lblBienvenida.Name = "lblBienvenida";
-            lblBienvenida.Size = new Size(418, 41);
+            lblBienvenida.Size = new Size(439, 44);
             lblBienvenida.TabIndex = 0;
-            lblBienvenida.Text = "Bienvenida a Sinterpart SRL";
+            lblBienvenida.Text = "Bienvenido a Sinterpart SRL";
             lblBienvenida.Click += label1_Click;
             // 
             // imagen
             // 
             imagen.Image = (Image)resources.GetObject("imagen.Image");
-            imagen.Location = new Point(258, 155);
+            imagen.Location = new Point(121, 120);
             imagen.Name = "imagen";
-            imagen.Size = new Size(301, 160);
+            imagen.Size = new Size(300, 170);
             imagen.TabIndex = 1;
             imagen.TabStop = false;
             // 
@@ -60,11 +60,13 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(527, 324);
             Controls.Add(imagen);
             Controls.Add(lblBienvenida);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FrmBienvenida";
-            Text = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Bienvenida";
             Load += FrmBienvenida_Load;
             ((System.ComponentModel.ISupportInitialize)imagen).EndInit();
             ResumeLayout(false);
